@@ -654,7 +654,6 @@ ENTRY(sys_call_table)
 	.long SYMBOL_NAME(sys_get_max_proc)
 	.long SYMBOL_NAME(sys_get_subproc_count)
 
-
 	.rept (NR_syscalls-(.-sys_call_table)/4 - 3)
 		.long SYMBOL_NAME(sys_ni_syscall)
 	.endr
